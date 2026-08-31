@@ -38,8 +38,17 @@ like-for-like — underground corridors cost far more, and Chennai has proportio
 
 ## Quick start
 
+The live UI on branch `version-2` is the frontend at `metro-tracker/web`. Figures are the curated
+snapshot from 25 Aug 2026 (`web/src/data/overview.js`) until the original SQLite server is restored.
+
+```bash
+cd metro-tracker/web
+npm install
+npm run dev          # http://localhost:5173
+```
+
 Requires **Node.js 22.5+** (the backend uses the built-in `node:sqlite` module, so there is no native
-build step).
+build step). To run the original scraper API as well:
 
 ```bash
 # 1. Backend
